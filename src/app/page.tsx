@@ -67,7 +67,7 @@ export default function Page() {
                     required: 'Start time is required',
                   })}
                   className="form-control"
-                  step="900" 
+                  step="300" 
                 />
                 {errors.wfhStartTime && <div className="text-danger">{errors.wfhStartTime.message}</div>}
               </div>

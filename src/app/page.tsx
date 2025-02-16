@@ -39,7 +39,7 @@ export default function Page() {
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
-        <div className="col-md-6 col-lg-4"> 
+        <div className="col-md-6 col-lg-5"> 
           <div className="card p-4 shadow">
             <h2 className="mb-4 text-center">Work from Home Form</h2>
             {submitted &&
@@ -52,7 +52,7 @@ export default function Page() {
                   type="number"
                   {...register('hoursWorked', { required: 'Hours worked is required' })}
                   className="form-control"
-                  step="0.25"
+                  step="0.01"
                   min="0"
                   max="9.25"
                 />
